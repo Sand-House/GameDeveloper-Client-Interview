@@ -7,6 +7,9 @@ C++ 11부터 들어오게 된 중요 개념으로 기술면접 시작으로 나�
 
 앞서 말한 '객체 이동이 아닌 포인터의 이동'이라는 점 때문에 이전에 소유하고 있는 객체가 포인터를 들고 있으면 한쪽에서 delete를 할 때 dangling pointer문제가 생길 수 있습니다. 때문에 이전에 소유하던 객체는 nullptr을 가지게 만드는 편입니다.
 
+C++11 이전 - 함수 반환 임시 객체를 다른 객체로 초기화할 때 복사 생성자가 호출됨
+C++11 이후 - move semantics가 도입되어 복사 생성자 대신 이동 생성자가 호출될 수 있음
+
 
 
 [이와 관련한 Stackoverflow의 좋은 글](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
